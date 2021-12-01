@@ -10,6 +10,8 @@ if(a>b&&a>c)
 System.out.println("The Greatest is" +a);
 else if(b>a&&b>c)
 System.out.println("The Greatest is"+b);
-else
+else  if(c>a&&c>b)
 System.out.println("The Greatest is"+c);
+else
+  System.out.println("The numbers are same");
 }}
