@@ -1,6 +1,5 @@
 public class Array4 {
   
-  // Write your code here
 public static boolean contains(int[] arr,int character){
 for(int n:arr){
     if(character==n){
