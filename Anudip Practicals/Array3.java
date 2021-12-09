@@ -1,6 +1,5 @@
 public class Array3 {
   public static void main(String[] args) {
-  // Write your code here
 int[] numbers=new int[]{20, 30, 25, 35, -16, 60, -100};
 int sum=0;
 for(int i=0;i<numbers.length;i++)
