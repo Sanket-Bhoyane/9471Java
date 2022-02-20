@@ -1,29 +1,40 @@
 import java.util.*;
+
 public class Remove {
 
 	public static void main(String[] args) {
+int count=0;int del;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter The Size Of Array:");
+	int n=sc.nextInt();
+	System.out.println("Enter The Values Of Array:");
+	int []a=new int [n];
+	for(int i=0;i<a.length;i++) {
+		a[i]=sc.nextInt();
 		
-
-	ArrayList<Integer> list=new ArrayList<>();
-	list.add(1);
-	list.add(2);
-	list.add(3);
-	list.add(4);
-	list.add(5);
-	list.add(6);
-	System.out.println("The List Is: " +list);
-	list.size();
-	System.out.println("Size of list: " +list.size());
-	System.out.println();
-	
-	list.removeAll(list);
-	
-	System.out.println("After Removing: " +list);
-	list.size();
-	System.out.println("After Removing all element the size of List is: "  +list.size());
-	System.out.println();
-	System.out.println("thank you for joining us.");
-	
 	}
+	System.out.println("Enter The Element:");
+	int x=sc.nextInt();
+	System.out.println();
+	System.out.println("The Original Array is:"+Arrays.toString(a));
+	for(int i=0;i<a.length-1;i++) {
+		if(x==a[i]) {
+			for(int j=i;j<a.length-1;j++) {
+				a[j]=a[j+1];
+				
+				
+			}
+		count=count+1;
+		break;}
+	}
+	System.out.println();
+	if(count==0) {
+		System.out.println("No Element Found.");
+		
+	}
+	else {
+		System.out.println("Element deleted Successfully.");
+		System.out.println(Arrays.toString(a));
+	}}
 
 }
