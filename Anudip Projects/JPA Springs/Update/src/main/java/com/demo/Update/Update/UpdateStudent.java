@@ -15,6 +15,8 @@ package com.demo.Update.Update;
     	public static void main(String [] args) {
     		EntityManagerFactory emf=Persistence.createEntityManagerFactory("Student_details");  
     			        EntityManager em=emf.createEntityManager(); 
+    			   em.getTransaction().begin();
+    			        
     			        StudentEntity s1=new StudentEntity();
     			        s1.setS_id(101);
     			        s1.setS_name("Sanket");
@@ -32,17 +34,21 @@ package com.demo.Update.Update;
     			        em.persist(s2);
     			        em.persist(s3);
 
-    	StudentEntity s=em.find(StudentEntity.class,102);
+    	StudentEntity s=em.find(StudentEntity.class,103);
     	System.out.println("Before Updation");
     	System.out.println("Student id="+s.getS_id());
     	System.out.println("Student name="+s.getS_name());
     	System.out.println("Student age="+s.getS_age());
-    	s.setS_age(30);
+    	s.setS_age(22);
+    	
     	System.out.println("After Updation");
     	System.out.println("Student id="+s.getS_id());
     	System.out.println("Student name="+s.getS_name());
     	System.out.println("Student age="+s.getS_age());
+    	StudentEntity s11=em.find(StudentEntity.class,103);
+    	em.remove(s11);
         em.getTransaction().commit();  
+        
         
         em.close();  
         emf.close(); 
