@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report4" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0da232a7-bcf4-4d17-8f0b-f92fbf432230">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from Bonus]]>
+	</queryString>
+	<field name="Worker_Ref_Id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Bonus_Amount" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Bonus_Date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="bonus_var" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{Bonus_Amount}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="70" backcolor="#FFCCFF" uuid="0fa88f29-2fd3-4861-8db5-a501dd561d6e"/>
+				<box>
+					<pen lineWidth="2.25"/>
+					<topPen lineWidth="2.25"/>
+					<leftPen lineWidth="2.25"/>
+					<bottomPen lineWidth="2.25"/>
+					<rightPen lineWidth="2.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Bell MT" size="30" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Title Of Work]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="363" y="1" width="160" height="60" backcolor="#FFCCCC" uuid="1f7de4ad-3c57-4558-aaa7-e56cfa1392aa"/>
+				<box>
+					<pen lineWidth="2.25"/>
+					<topPen lineWidth="2.25" lineColor="#000000"/>
+					<leftPen lineWidth="2.25" lineColor="#000000"/>
+					<bottomPen lineWidth="2.25" lineColor="#000000"/>
+					<rightPen lineWidth="2.25" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Bonus Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="43" y="1" width="160" height="60" backcolor="#FFCCCC" uuid="5fa48755-325f-4ee6-819c-0679e14b8015"/>
+				<box>
+					<pen lineWidth="2.25"/>
+					<topPen lineWidth="2.25" lineColor="#000000"/>
+					<leftPen lineWidth="2.25" lineColor="#000000"/>
+					<bottomPen lineWidth="2.25" lineColor="#000000"/>
+					<rightPen lineWidth="2.25" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Worker Reference ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="203" y="1" width="160" height="60" backcolor="#FFCCCC" uuid="d3abeb0f-dda4-46aa-801b-ecf8257caa48"/>
+				<box>
+					<pen lineWidth="2.25"/>
+					<topPen lineWidth="2.25" lineColor="#000000"/>
+					<leftPen lineWidth="2.25" lineColor="#000000"/>
+					<bottomPen lineWidth="2.25" lineColor="#000000"/>
+					<rightPen lineWidth="2.25" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Bonus Amount]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="44" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="43" y="0" width="160" height="40" backcolor="#CC66FF" uuid="69a04f5c-3318-44f6-9a80-19bec380c31c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Worker_Ref_Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="203" y="0" width="160" height="40" backcolor="#CC66FF" uuid="20061ac4-d914-4dfd-98aa-0ebac653ef06"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bonus_Amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="363" y="0" width="160" height="40" backcolor="#CC66FF" uuid="267366b4-3347-4899-8000-4aa0884bd7a4"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bonus_Date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="36" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="43" y="0" width="160" height="33" backcolor="#6666FF" uuid="b2fa5166-e469-4809-8817-9860365224f8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="203" y="0" width="160" height="33" backcolor="#6666FF" uuid="9f601d8e-ae87-46a8-8649-1fb66b5c4332"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{bonus_var}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

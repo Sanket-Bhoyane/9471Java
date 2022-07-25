@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report7" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="58136400-2ea3-43f7-9eed-9f8da42d33a4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select*from films;]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="f_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="blockbuster" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="67" forecolor="#6666FF" backcolor="#FFCCFF" uuid="38cc1d51-bfea-4e10-841e-3dfddb186bdb"/>
+				<box>
+					<pen lineColor="#999999"/>
+					<topPen lineWidth="2.0" lineColor="#999999"/>
+					<leftPen lineWidth="2.0" lineColor="#999999"/>
+					<bottomPen lineWidth="2.0" lineColor="#999999"/>
+					<rightPen lineWidth="2.0" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Film Fare Awards 2023]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="72" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="382" y="10" width="169" height="20" forecolor="#CCCCCC" uuid="03bca5e1-2e02-482f-8485-dc84b9b82122"/>
+				<text><![CDATA[Powerd By Mars Telecom Pvt Ltd]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="203" y="0" width="150" height="50" forecolor="#CCFFFF" backcolor="#CC99FF" uuid="d78a888d-1de5-43fd-8f6a-98c62b9e1377"/>
+				<box>
+					<pen lineWidth="2.0" lineColor="#000000"/>
+					<topPen lineWidth="2.0" lineColor="#000000"/>
+					<leftPen lineWidth="2.0" lineColor="#000000"/>
+					<bottomPen lineWidth="2.0" lineColor="#000000"/>
+					<rightPen lineWidth="2.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gill Sans Ultra Bold" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Film Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="353" y="0" width="150" height="50" forecolor="#CCFFFF" backcolor="#CC99FF" uuid="e37eca94-0314-4a89-88fe-6c8a34e82498"/>
+				<box>
+					<pen lineWidth="2.0" lineColor="#000000"/>
+					<topPen lineWidth="2.0" lineColor="#000000"/>
+					<leftPen lineWidth="2.0" lineColor="#000000"/>
+					<bottomPen lineWidth="2.0" lineColor="#000000"/>
+					<rightPen lineWidth="2.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gill Sans Ultra Bold" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BOX OFFICE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="53" y="0" width="150" height="50" forecolor="#CCFFFF" backcolor="#CC99FF" uuid="a7ab5496-0275-43c6-a87d-ff6ccb21c5bb"/>
+				<box>
+					<pen lineWidth="2.0" lineColor="#000000"/>
+					<topPen lineWidth="2.0" lineColor="#000000"/>
+					<leftPen lineWidth="2.0" lineColor="#000000"/>
+					<bottomPen lineWidth="2.0" lineColor="#000000"/>
+					<rightPen lineWidth="2.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gill Sans Ultra Bold" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FIlm ID]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="43" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="353" y="0" width="150" height="40" forecolor="#330099" backcolor="#FFCCCC" uuid="b592c4f2-8a33-4e29-882a-9497e5704f98"/>
+				<box>
+					<pen lineWidth="2.5"/>
+					<topPen lineWidth="2.5"/>
+					<leftPen lineWidth="2.5"/>
+					<bottomPen lineWidth="2.5"/>
+					<rightPen lineWidth="2.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BankGothic Lt BT" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{blockbuster}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="203" y="0" width="150" height="40" forecolor="#330099" backcolor="#FFCCCC" uuid="c45abb40-7954-408d-8400-441685ca42d2"/>
+				<box>
+					<pen lineWidth="2.5"/>
+					<topPen lineWidth="2.5"/>
+					<leftPen lineWidth="2.5"/>
+					<bottomPen lineWidth="2.5"/>
+					<rightPen lineWidth="2.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BankGothic Lt BT" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{f_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="53" y="0" width="150" height="40" forecolor="#330099" backcolor="#FFCCCC" uuid="a79cdc0f-39de-491f-81d0-8ab4277dc81f"/>
+				<box>
+					<pen lineWidth="2.5"/>
+					<topPen lineWidth="2.5"/>
+					<leftPen lineWidth="2.5"/>
+					<bottomPen lineWidth="2.5"/>
+					<rightPen lineWidth="2.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BankGothic Lt BT" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="141" y="0" width="241" height="20" uuid="856d4a52-5499-40b2-99cb-819d5f7a9640"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[THANK YOU SO MUCH FOR VISITING..]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
