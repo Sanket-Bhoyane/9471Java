@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selecters</title>
+
+    <script>
+        console.log("inside body")
+    </script>
+</head>
+<body>
+    <h1>DOM Selecters</h1>
+    <h2 id="banner">maari the king of earth</h2>
+    <h1 class="myclass">hello world</h1>
+    <h1 class="myclass">hello world</h1>
+    <h1 class="myclass">hello world</h1>
+
+    <script>
+        console.log("head section")
+
+        let ht=document.documentElement
+        console.log(ht)
+
+        let bo=document.body
+        console.log(bo)
+        
+        let ha=document.head
+        console.log(ha)
+        let ti=document.title
+        console.log(ti)
+//selecting element by id
+//getElementById()
+    //  let h2=document.getElementById("banner")
+    //  console.log(h2)
+    //  h2.innerHTML="changed the text"
+    //  h2.style.color="pink"
+    //  h2.style.background="blue"
+
+    //selecting element by class name
+// getElementsByClassName
+ let m=document.getElementsByClassName("myclass")
+//  console.log(typeof m)
+//  for(let element of m){
+//     console.log(element);
+//     element.style.color="white"
+//    element.style.backgroundColor="blue"
+//  }
+ //selecting element by css selecter
+ //querySelector-single element 
+ //querySelectorAll -list 
+  let m1=document.querySelectorAll(".myclass")
+
+  for(let e of m1){
+    console.log(e)
+    e.style.color="blue"
+  }
+//   console.log(m1)
+
+    </script>
+</body>
+</html>

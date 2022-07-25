@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>learning function in Js</h1>
+<body>
+    <script>
+        //how to create function
+        function sayhello(){
+            //function body
+            console.log("How are You")
+            console.log("What are You doing?")
+        }
+        sayhello()
+        console.log("mid of the code")
+        sayhello()
+        //function with argument and return type
+        //formal parameters
+        function doSum(a,b){
+            let c=a+b
+           return c
+        }
+        //actual parameters
+        console.log("sum is", doSum(12,45))
+let fn=doSum(40,40)
+console.log(fn)
+        
+//arrow functions
+   const toCelsius=(fahranite)=>{
+    let result=(5/9)*(fahranite -32)
+    return result
+   }
+   let f=toCelsius(102)
+   console.log(f)
+
+   
+   
+            </script>
+</body>
+</html>

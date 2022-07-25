@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>This Is My First Javascript Project</title>
+    </head>
+    <body>
+        <h1>
+            welcome to Javascript
+        </h1>
+        <p>
+            Javascript is my favorite programming language
+        </p>
+        <hr>
+        <h1 id="my-content"></h1>
+        <h2 style="display:none;"id="change-content-div">My college name is MMCOE</h2>
+        <button onclick="changeContent()">Change</button>
+    </body>
+    <!-- <script src="myjs.js"></script> -->
+    <script>
+// name=prompt("Enter Name")
+// document.write(name)
+// document.write(confirm ("would u like to exit"))
+// document.getElementById("my-content").innerHTML="This Is dynamic content"
+
+// var a=4
+// var b=5
+// document.write("a+b =",a+b,"<br>")
+// document.write("a-b =",a-b,"<br>")
+// document.write("a*b =",a*b,"<br>")
+// document.write("a/b =",a/b,"<br>")
+// document.write("a%b =",a%b,"<br>")
+// document.write(typeof a,"<br>")
+// var name="sanket"
+// document.write(typeof name,"<br>")
+// let abc=234
+// document.write(abc)
+// var name="maari"
+// document.write(typeof name,"<br>")
+// document.write(name.length,"<br>")
+// document.write(name.toUpperCase(),"<br>")
+// document.write(name.toLowerCase(),"<br>")
+// document.write(name.charAt(5))
+// var a= true
+// var b=false
+// document.write(typeof a)
+// var ob={"name":"maari"}
+// document.write(typeof ob,"<br>")
+// document.write(ob["name"])
+
+// var nams=[1,5,89,74]
+// document.write(nams.length,"<br>")
+// document.write(nams[4],"<br>")
+// document.write(typeof nams)
+// var a=prompt("Enter The Number")
+// var b=parseInt(a)
+// if(a>0){
+//     document.write("Positive")
+// }
+// else if(a<0){
+//     document.write("Negative")
+// }
+// else{
+//     document.write("Zero")
+// }
+// var n=parseInt(prompt("Enter Number"))
+// var s=0
+// for(var i=1;i<=n;i++){
+//      s=s+i
+    
+// }document.write("sum is :"+s)
+// var i=1
+// while(true){
+//     document.write(i,"<br>")
+//     if(i==15){
+//         break
+       
+//     }
+   
+//     i++
+// }
+// for(var i=0;i<=10;i++){
+//     document.write("First",i,"<br>")
+//     if(i==3){
+//         continue;
+//     }
+//     document.write("second",i,"<br>")
+//     document.write("third",i,"<br>")
+//     document.write("+++++++++++++","<br>")
+// }
+// var i=1;
+// do{
+//     document.write(i,"<br>");
+//     i++
+// }while(i<=10);
+//   var name=['sank','tare','yeda','sunny']
+//   document.write(name.length,"<br>")
+//   for(var i=0;i<=name.length-1;i++){
+//     document.write(name[i],"<br>")
+//   }
+// function sayhello(){
+//     document.write("Hello world","<br>")
+// }
+// sayhello()
+// function dosum(a,b){
+//     return a+b
+// }
+
+// document.write(dosum(3,4o))
+
+function changeContent(){
+    // alert("test")
+    var element=document.getElementById("change-content-div");
+    element.innerHTML="this Is new Content"
+    element.style.display="block"
+    element.style.color="red"
+    element.style.backgroundColor="black"
+    document.body.style.backgroundColor="blue"
+}
+    </script>
+</html>
+

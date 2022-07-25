@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array operations</title>
+</head>
+<body>
+
+    <h1>array operatons</h1>
+<script>
+    //create
+let names=["san","kon","faga"]
+    console.log(names)
+    console.log(names.length)
+    //array accesing
+    console.log(names[2])
+    //loop over an array
+    //forEach function for loop
+
+    names.forEach(function(item,index){
+        //this is function body
+        console.log(index,"=>",item)
+    });
+
+    let nums=[22,33,45]
+   let sum=0
+   nums.forEach(function(items,indx){
+    sum=sum+items
+   })
+   console.log("sum",sum)
+
+   console.log(names)
+   //adding at last 
+   names.push("sham")
+   console.log(names)
+   names.push("koko")
+   console.log(names)
+   
+   //removing element by pop from last
+   let r=names.pop()
+   console.log(names)
+   console.log(names.pop())
+   console.log(names)
+
+   //remove from starting
+
+  let r1= names.shift()
+  console.log(r1)
+  console.log(names)
+
+  // adding from start
+
+  console.log(names.unshift("karan"))
+  console.log(names)
+  console.log(names.length)
+
+  //finding from index
+
+  console.log(names.indexOf("kon"))
+
+  //remove the element from any position using splice
+
+  //splice(pos,n)
+ console.log( names.splice(1,2))
+ console.log(names)
+//copy an array
+//slice
+let copy=names.slice()
+console.log(copy)
+console.log(names)
+
+    </script>
+</body>
+</html>

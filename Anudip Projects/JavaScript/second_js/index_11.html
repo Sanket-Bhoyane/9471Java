@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Loops, for in loop</h1>
+    <script>
+//         let i=1
+// while(i<=10){
+    // console.log("hii its interesting");
+    //example for in loop
+    console.log("Example of for in loop");
+  let st1=  {
+        names:'john',
+        phones: 9464,
+address: "Pune"
+
+    }
+    console.log(st1)
+    console.log(typeof st1)
+    //for in loop
+    for(let k in st1){
+     console.log(`${k}=>${st1[k]}`)
+    }
+
+  let ar=  ['abc','lmn','xyz']
+  for(let g in ar){
+    console.log(ar[g])
+  }
+
+  //for of loop
+  let arr=  ['abc','lmn','xyz']
+  console.log(arr)
+  for(let item of arr ){
+    console.log(item)
+  }
+  //for in loop
+  for(let item in arr){
+    console.log(item)
+  }
+
+
+
+    </script>
+    </body>
+</html>

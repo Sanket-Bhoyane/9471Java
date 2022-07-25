@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>five important string operations</h1>
+    <script>
+        //how to check equality of two string with help of literal
+        let a="sanket"
+        let b="sanket"
+        console.log(a)
+        console.log(b)
+        console.log(a==b)
+        if(a==b){
+            console.log("both string are equals")
+        }
+        //creating a string by using new keyword
+        let c=new String("sanket")
+        let d=new String("sanket")
+console.log(c)
+console.log(d)
+console.log(c==d)
+
+//comparing strings
+let s1="A"
+let s2="B"
+//.localCompare
+console.log(s1.localeCompare(s2))
+//s1<s2 :-1
+//s1>s2 : 1
+//s1=s2 :0
+console.log(s2.charCodeAt(0))
+
+//Replace certain word with another
+let oldString="i hate js"
+let newString=oldString.replace("hate","love")
+console.log(oldString)
+console.log(newString)
+
+//accessing element by charAt(index)
+let g="i love js"
+console.log(g.charAt(0))
+console.log(g[1])
+//converting string into array
+console.log(g.split(" "))
+</script>
+</body>
+</html>

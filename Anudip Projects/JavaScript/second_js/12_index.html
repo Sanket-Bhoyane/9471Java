@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object Operations</h1>
+    <script>
+// creating objects
+let ara={
+  name:"sanket",
+  age:24,
+  address:"pune",
+  phone:46546  ,
+  "last name":"bhoyane",
+  display:function(){
+    console.log("displaying properties..")
+console.log(this.name)
+console.log(this.address)
+console.log(this.age)
+  }
+}
+
+console.log(ara)
+console.log(typeof ara)
+//accessing the properties of object
+
+console.log(ara.name)
+console.log(ara.phone)
+console.log(ara["last name"])
+console.log(ara["name"])
+console.log(ara["phone"])
+ara.display()
+
+//for in loop 
+for(let b in ara){
+    console.log(b + " "+ara[b])
+}
+
+ara.display()
+
+ara["display"]()
+
+// changing values of properties
+
+ara.name="ram"
+console.log(ara.name)
+console.log(ara)
+ara['last name']="tiwari"
+console.log(ara)
+//dynamic adding properties
+ara["email"]="s@gmail.com"
+console.log(ara)
+//deleting property
+
+delete ara["last name"]
+console.log(ara)
+ 
+  </script>
+</body>
+</html>
